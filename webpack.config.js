@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 const createExpoWebpackConfigAsync = require('@expo/webpack-config');
 
 module.exports = async function (env, argv) {

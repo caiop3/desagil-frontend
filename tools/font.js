@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 import modules from '../scripts/requireFonts';
 
 import GoogleFonts from '../themes/GoogleFonts';

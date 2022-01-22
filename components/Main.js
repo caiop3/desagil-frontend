@@ -13,7 +13,7 @@ export default function Main(props) {
                 alignItems: 'center',
             }}
         >
-            <Text>Open up Main.js to start working on your app!</Text>
+            <Text>Abra Main.js para começar a trabalhar no seu app!</Text>
         </View>
     );
 }

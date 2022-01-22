@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 import React, { useContext } from 'react';
 
 import createStateContext from '@hashiprobr/react-create-state-context';

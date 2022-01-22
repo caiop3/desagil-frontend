@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 const fs = require('fs');
 const path = require('path');
 

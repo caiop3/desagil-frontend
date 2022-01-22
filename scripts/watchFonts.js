@@ -1,10 +1,12 @@
+// Não é necessário entender ou modificar este arquivo.
+
 const fs = require('fs');
 const path = require('path');
 const chokidar = require('chokidar');
 
 function write(inPath) {
     const specs = JSON.parse(fs.readFileSync(inPath, { encoding: 'utf8' }));
-    const lines = ['export default {'];
+    const lines = ['// Não é necessário entender ou modificar este arquivo.', '\nexport default {'];
     for (const name in specs.dependencies) {
         if (name.startsWith('@expo-google-fonts/')) {
             lines.push(`    '${name.slice(19)}': require('${name}'),`);

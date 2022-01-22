@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 import React from 'react';
 
 class ErrorBoundary extends React.Component {

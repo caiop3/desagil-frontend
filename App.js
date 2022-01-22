@@ -1,3 +1,5 @@
+// Não é necessário entender ou modificar este arquivo.
+
 import 'react-native-gesture-handler';
 
 import merge from 'deepmerge';
@@ -22,11 +24,6 @@ import CustomDefaultTheme from './themes/DefaultTheme';
 import CustomDarkTheme from './themes/DarkTheme';
 
 import Main from './components/Main';
-
-// Ignoring a specific warning in the web. This is a
-// terrible hack, but I could not find a way around it
-// because the warning does make sense. The problem is
-// that the library does not support react-native-web.
 
 if (Platform.OS === 'web') {
     const warn = console.warn;
