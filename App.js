@@ -16,7 +16,7 @@ import { DateTimeContainer } from '@hashiprobr/react-native-paper-datetimepicker
 
 import AppLoading from 'expo-app-loading';
 
-import { getFonts, useStyles, useDark, DarkContext, ErrorBoundary } from './tools';
+import { provide, getFonts, useStyles, useDark, DarkContext, ErrorBoundary } from './tools';
 
 import CustomDefaultTheme from './themes/DefaultTheme';
 import CustomDarkTheme from './themes/DarkTheme';
@@ -50,7 +50,7 @@ function App() {
     const theme = dark[0] ? darkTheme : defaultTheme;
 
     return (
-        loaded.every((value) => value) ? (
+        loaded.every((value) => value) ? provide(
             <PaperProvider theme={theme}>
                 <SafeAreaProvider>
                     <NavigationContainer theme={theme}>
