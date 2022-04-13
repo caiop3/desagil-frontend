@@ -8,7 +8,7 @@
     "create-component": "node scripts/createComponent.js",
     "create-navigation": "node scripts/createNavigation.js",
     "ios": "expo start --ios",
-    "start": "concurrently --raw --kill-others 'node scripts/watchFonts.js' 'node scripts/watchStyles.js' 'expo start'",
+    "start": "concurrently --raw --kill-others \"node scripts/watchFonts.js\" \"node scripts/watchStyles.js\" \"expo start\"",
     "web": "expo start --web"
   },
   "resolutions": {
@@ -82,7 +82,7 @@
     "@babel/core": "~7.12.9",
     "@expo/webpack-config": "^0.16.15",
     "chokidar": "~3.5.3",
-    "concurrently": "~7.0.0",
+    "concurrently": "^7.1.0",
     "css-to-react-native": "~3.0.0",
     "postcss": "~8.4.5",
     "prompt-sync": "~4.2.0"
