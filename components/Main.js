@@ -1,19 +1,30 @@
 import React from 'react';
 
-import { View } from 'react-native';
+import { View, ImageBackground } from 'react-native';
 
-import { Text } from 'react-native-paper';
+import { Text, Searchbar, Title } from 'react-native-paper'; 
+
+import styles from '../styles/Busca.json';
 
 export default function Main(props) {
     return (
-        <View
-            style={{
-                flexGrow: 1,
-                justifyContent: 'center',
-                alignItems: 'center',
-            }}
-        >
-            <Text>Abra Main.js para começar a trabalhar no seu app!</Text>
+        <View style={styles.container}>
+            <Searchbar style={styles.search} />
+            <Title style={styles.title}>Categorias</Title>
+            <View style={styles.deck}>
+                <ImageBackground style={styles.card}>
+                    <Text>Bebidas</Text>    
+                </ImageBackground>
+                <ImageBackground style={styles.card}>
+                    <Text>Bebidas</Text>    
+                </ImageBackground>                
+                <ImageBackground style={styles.card}>
+                    <Text>Bebidas</Text>    
+                </ImageBackground> 
+                <ImageBackground style={styles.card}>
+                    <Text>Bebidas</Text>    
+                </ImageBackground> 
+            </View>
         </View>
     );
 }

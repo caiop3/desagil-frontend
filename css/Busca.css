@@ -1,0 +1,24 @@
+container {
+    flex-grow: 1;
+}
+
+search {
+    margin: 10px;
+}
+
+title {
+    margin: 10px;
+    font-weight: bold;
+}
+
+deck {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+card {
+    width: 50%;
+    padding: 10px;
+    background-color: #ff0000;
+    border-radius: 5px;
+}
